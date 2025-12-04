@@ -26,22 +26,22 @@ Typical scenarios where this container excels:
 
 Download the runtime container images:
 ```bash
-docker pull cleanstart/busybox:latest
-docker pull cleanstart/busybox:latest-dev
+docker pull ghcr.io/cleanstart-containers/busybox:latest
+docker pull ghcr.io/cleanstart-containers/busybox:latest-dev
 ```
 
 ### Interactive Development
 
 Start interactive session for development:
 ```bash
-docker run --rm -it --entrypoint /bin/sh cleanstart/busybox:latest-dev
+docker run --rm -it --entrypoint /bin/sh ghcr.io/cleanstart-containers/busybox:latest-dev
 ```
 
 ### Container Start
 
 Start the container:
 ```bash
-docker run --rm -it --name busybox-dev cleanstart/busybox:latest
+docker run --rm -it --name busybox-dev ghcr.io/cleanstart-containers/busybox:latest
 ```
 
 ## Best Practices
@@ -54,8 +54,8 @@ docker run --rm -it --name busybox-dev cleanstart/busybox:latest
 
 ### Multi-Platform Images
 ```bash
-docker pull --platform linux/amd64 cleanstart/busybox:latest
-docker pull --platform linux/arm64 cleanstart/busybox:latest
+docker pull --platform linux/amd64 ghcr.io/cleanstart-containers/busybox:latest
+docker pull --platform linux/arm64 ghcr.io/cleanstart-containers/busybox:latest
 ```
 
 ## Resources
