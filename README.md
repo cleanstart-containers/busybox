@@ -41,7 +41,7 @@ docker run --rm -it --entrypoint /bin/sh ghcr.io/cleanstart-containers/busybox:l
 
 Start the container:
 ```bash
-docker run --rm -it --name busybox-dev ghcr.io/cleanstart-containers/busybox:latest
+docker run --rm -it --name busybox-dev --entrypoint /bin/sh ghcr.io/cleanstart-containers/busybox:latest
 ```
 
 ## Best Practices
