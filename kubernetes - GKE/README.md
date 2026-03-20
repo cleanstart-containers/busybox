@@ -26,6 +26,7 @@ kubectl get service -n busybox-sample
 # Get external IP and test directly
 kubectl get service -n busybox-sample
 curl http://<EXTERNAL-IP>
+# please use GKE cluster to make this IPaddress available. If you are running locally, this will assign nodeport only, but not loadbalancer..
 
 # Expected response: <h1>Hello from BusyBox on Kubernetes!</h1>
 ```
